@@ -12,7 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 		executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD,
 		scripts = {
 				"/data/course.sql",
-				"/data/student.sql"
+				"/data/student.sql",
+				"/data/batch.sql"
 		}
 )
 public class SpringJpaApplicationTests {

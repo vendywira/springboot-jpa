@@ -1,7 +1,9 @@
 package app.learn.spring.jpa.entity;
 
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Column;
@@ -14,6 +16,7 @@ import javax.persistence.Id;
 @Entity
 public class Course {
 
+  @Setter(AccessLevel.NONE)
   @Id @GeneratedValue(generator = "uuid")
   @GenericGenerator(name = "uuid", strategy = "uuid2")
   private String id;

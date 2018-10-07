@@ -33,7 +33,7 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialec
 spring.jpa.hibernate.ddl-auto = validate
 ```
 
-- on main class add annotation like below for enable jpa repository
+- for enable jpa repository, on main class add annotation like below : 
 ```java
 @SpringBootApplication
 @EnableJpaRepositories
@@ -42,7 +42,7 @@ public class SpringJpaApplication {
 }
 ```
 
-- for simple query you can use query method. jpa can query base on method name.
+- for simple query you can use query method. jpa can get query base on your method name.
 ```java
 @Repository
 public interface CourseRepository extends JpaRepository<Course, String>, CourseRepositoryCustom {
